@@ -1,0 +1,217 @@
+.cv
+    display: grid
+    grid-template-columns: 30% 70%
+    @include responsivephone
+        display: flex
+        flex-direction: column
+    h2
+            color: $csecundario
+            font-family: $fprincipal
+            font-size: 1.9rem
+            font-weight: 600
+            text-align: left
+            margin: $sep/2 auto $sep/4 auto
+            width: 90%
+            text-transform: uppercase
+            
+            &::after
+                display: block
+                content: ''
+                height: .2rem
+                border-radius: .1rem
+                width: 100%
+                background-color: $csecundario
+            i
+                font-size: 2.3rem
+    .info-personal
+        background-color: $cprincipal
+        margin: $sep/3 0
+        @include responsivephone
+            margin: 0 auto
+            width: 100%
+        .contenedor-imagen
+            height: 12rem
+            width: 12rem
+            background-image: url("/build/img/Rafael-Correa.webp")
+            background-repeat: no-repeat
+            background-size: cover
+            border-radius: 50%
+            margin: $sep auto $sep/3 auto
+        .perfil
+            h1
+                color: $csecundario
+                font-family: $fprincipal
+                font-size: 2.8rem
+                font-weight: 500
+                text-align: center
+                text-transform: uppercase
+            h3
+                color: $claro
+                font-family: $fprincipal
+                font-size: 1.6rem
+                font-weight: 500
+                text-align: center
+                margin: $sep/4 auto
+            p
+                width: 80%
+                text-align: justify
+                color: $claro
+                font-family: $fprincipal
+                margin: 0 auto
+                font-weight: 400
+                font-size: 1.7rem
+        .contacto
+            p 
+                width: 90%
+                text-align: justify
+                color: $claro
+                font-family: $fprincipal
+                margin: $sep/5 auto
+                font-weight: 400
+                font-size: 1.7rem
+            .links
+                display: flex
+                justify-content: center
+                i
+                    color: $claro
+                    font-size: 3rem
+                    text-align: center
+                    margin: $sep/5 
+    main
+        .contenedor-item
+            margin-bottom: $sep/4
+            h3
+                color: $cprincipal
+                font-family: $fprincipal
+                font-size: 1.6rem
+                font-weight: 600
+                text-align: left
+                margin: 0
+                width: 90%
+                display: flex
+                @include responsivephone
+                    margin: 0 auto
+                i
+                    margin-right: $sep/4
+                    display: none 
+                    &.active 
+                        display: block 
+            h4
+                color: $csecundario
+                font-family: $fprincipal
+                font-size: 1.4rem
+                font-weight: 400
+                text-align: left
+                margin: 0
+                width: 90%
+                @include responsivephone
+                    margin: 0 auto
+            .fecha
+                color: $cprincipal
+                font-family: $fprincipal
+                font-size: 1.2rem
+                font-weight: 400
+                text-align: left
+                margin: 0
+                width: 90%
+                margin-bottom: $sep/3
+                @include responsivephone
+                    margin: 0 auto
+            .description
+                color: $oscuro
+                font-family: $fprincipal
+                font-size: 1.2rem
+                font-weight: 300
+                text-align: justify
+                margin: 0 auto $sep/5 5%
+                width: 90%
+                i
+                    color: $csecundario
+
+.contenedor-skills
+    width: 90%
+    margin: auto
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    column-gap: $sep/4
+    margin-bottom: $sep/2
+    @include responsivetablet
+        grid-template-columns: 1fr 1fr
+    h4
+        color: $csecundario
+        font-family: $fprincipal
+        font-size: 1.6rem
+        font-weight: 400
+        text-align: left
+        margin: 0
+        width: 90%
+    .barra 
+        width: 100%
+        border: .4rem solid $cprincipal
+        height: 1.5rem
+        margin-bottom: $sep/5
+        background-color: rgba(0,0,0,0)
+        .llenado
+            margin: auto
+            width: 0%
+            height: 100%
+            margin-left: 0
+            background-color: $csecundario
+
+.i1 
+    .barra .llenado
+        width: 100%
+.i2 
+    .barra .llenado
+        width: 60%
+.s1
+    .barra .llenado
+        width: 80%
+.s2
+    .barra .llenado
+        width: 60%
+.s3
+    .barra .llenado
+        width: 95%
+.s4
+    .barra .llenado
+        width: 60%
+.s5
+    .barra .llenado
+        width: 60%
+.s6
+    .barra .llenado
+        width: 80%
+.s7
+    .barra .llenado
+        width: 90%
+.s8
+    .barra .llenado
+        width: 90%
+.s9
+    .barra .llenado
+        width: 70%
+.s10
+    .barra .llenado
+        width: 30%
+.s11
+    .barra .llenado
+        width: 40%
+.s12
+    .barra .llenado
+        width: 75%
+.s13
+    .barra .llenado
+        width: 70%
+.s14
+    .barra .llenado
+        width: 55%
+
+
+
+
+
+            
+                 
+
+                
