@@ -1,6 +1,8 @@
 .cv
     display: grid
     grid-template-columns: 30% 70%
+    @include responsivetablet
+            grid-template-columns: 35% 65%
     @include responsivephone
         display: flex
         flex-direction: column
@@ -59,7 +61,7 @@
                 font-family: $fprincipal
                 margin: 0 auto
                 font-weight: 400
-                font-size: 1.7rem
+                font-size: 1.5rem
         .contacto
             p 
                 width: 90%
@@ -68,7 +70,7 @@
                 font-family: $fprincipal
                 margin: $sep/5 auto
                 font-weight: 400
-                font-size: 1.7rem
+                font-size: 1.5rem
             .links
                 display: flex
                 justify-content: center
@@ -77,6 +79,16 @@
                     font-size: 3rem
                     text-align: center
                     margin: $sep/5 
+        .ref-digital
+            margin-top: 7rem
+            p
+                width: 80%
+                text-align: justify
+                color: $claro
+                font-family: $fprincipal
+                margin: 0 auto
+                font-weight: 300
+                font-size: 1rem
     main
         .contenedor-item
             margin-bottom: $sep/4
@@ -163,7 +175,7 @@
         width: 100%
 .i2 
     .barra .llenado
-        width: 80%
+        width: 65%
 .s1
     .barra .llenado
         width: 80%
