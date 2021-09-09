@@ -9,10 +9,10 @@
     h2
             color: $csecundario
             font-family: $fprincipal
-            font-size: 1.9rem
+            font-size: 1.7rem
             font-weight: 600
             text-align: left
-            margin: $sep/2 auto $sep/4 auto
+            margin: $sep/8 auto $sep/8 0
             width: 90%
             text-transform: uppercase
             
@@ -31,6 +31,9 @@
         @include responsivephone
             margin: 0 auto
             width: 100%
+        h2
+            margin: $sep/4 auto
+
         .contenedor-imagen
             height: 12rem
             width: 12rem
@@ -61,7 +64,7 @@
                 font-family: $fprincipal
                 margin: 0 auto
                 font-weight: 400
-                font-size: 1.5rem
+                font-size: 1.3rem
         .contacto
             p 
                 width: 90%
@@ -89,18 +92,14 @@
                 margin: 0 auto
                 font-weight: 300
                 font-size: 1rem
-            //     display: none
-            // @include responsivetablet
-            //     display: block
-            // @include responsivephone
-            //     display: none
     main
         .contenedor-item
-            margin-bottom: $sep/4
+            margin: 0 auto $sep/4 $sep/5
+
             h3
                 color: $cprincipal
                 font-family: $fprincipal
-                font-size: 1.6rem
+                font-size: 1.4rem
                 font-weight: 600
                 text-align: left
                 margin: 0
@@ -116,7 +115,7 @@
             h4
                 color: $csecundario
                 font-family: $fprincipal
-                font-size: 1.4rem
+                font-size: 1.2rem
                 font-weight: 400
                 text-align: left
                 margin: 0
@@ -126,7 +125,7 @@
             .fecha
                 color: $cprincipal
                 font-family: $fprincipal
-                font-size: 1.2rem
+                font-size: 1rem
                 font-weight: 400
                 text-align: left
                 margin: 0
@@ -137,7 +136,7 @@
             .description
                 color: $oscuro
                 font-family: $fprincipal
-                font-size: 1.2rem
+                font-size: 1rem
                 font-weight: 300
                 text-align: justify
                 margin: 0 auto $sep/5 5%
@@ -154,91 +153,56 @@
     margin-bottom: $sep/2
     @include responsivetablet
         grid-template-columns: 1fr 1fr
+    @include responsivephone
+        grid-template-columns: 1fr
+
+    h3
+        grid-column-start: 1
+        grid-column-end: -1
+        color: $cprincipal
+        font-family: $fprincipal
+        font-size: 2.2rem
+        font-weight: 500
+        text-align: left
+        margin: 0
+        width: 100%
     h4
         color: $csecundario
         font-family: $fprincipal
         font-size: 1.6rem
         font-weight: 400
         text-align: left
-        margin: 0
+        margin: $sep/10
         width: 90%
-    .barra 
-        width: 100%
-        border: .4rem solid $cprincipal
-        height: 1.5rem
-        margin-bottom: $sep/5
-        background-color: rgba(0,0,0,0)
-        .llenado
-            margin: auto
-            width: 0%
-            height: 100%
-            margin-left: 0
-            background-color: $csecundario
+        @include responsivetablet
+            
+            font-size: 1.4rem
+    p
+        color: $csecundario
+        font-family: $fprincipal
+        font-size: 1.2rem
+        font-weight: 300
+        text-align: left
+        margin: 0 auto
+        width: 95%
 
-.i1 
-    .barra .llenado
-        width: 100%
-.i2 
-    .barra .llenado
-        width: 65%
-.i3 
-    .barra .llenado
-        width: 35%
-.s1
-    .barra .llenado
-        width: 80%
-.s2
-    .barra .llenado
-        width: 60%
-.s3
-    .barra .llenado
-        width: 95%
-.s4
-    .barra .llenado
-        width: 60%
-.s5
-    .barra .llenado
-        width: 60%
-.s6
-    .barra .llenado
-        width: 85%
-.s7
-    .barra .llenado
-        width: 95%
-.s8
-    .barra .llenado
-        width: 95%
-.s9
-    .barra .llenado
-        width: 80%
-.s10
-    .barra .llenado
-        width: 50%
-.s11
-    .barra .llenado
-        width: 80%
-.s12
-    .barra .llenado
-        width: 75%
-.s13
-    .barra .llenado
-        width: 70%
-.s14
-    .barra .llenado
-        width: 75%
-.s15
-    .barra .llenado
-        width: 70%
-.s16
-    .barra .llenado
-        width: 40%
-.s17
-    .barra .llenado
-        width: 90%
+    // .barra 
+    //     width: 100%
+    //     border: .4rem solid $cprincipal
+    //     height: 1.5rem
+    //     margin-bottom: $sep/5
+    //     background-color: rgba(0,0,0,0)
+    //     .llenado
+    //         margin: auto
+    //         width: 0%
+    //         height: 100%
+    //         margin-left: 0
+    //         background-color: $csecundario
 
+// .s1 
+//     .barra .llenado
+//         width: 100%
 .skills, .idiomas
-    .barra
-        display: none
     .contenedor-skills
         h4
             color: $cprincipal
